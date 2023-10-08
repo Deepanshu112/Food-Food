@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food-Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid" style="background-color: orangered;">
+            <a class="navbar-brand" href="index.html">Food-Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Curry
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Indian.html">Indian</a></li>
+                            <li><a class="dropdown-item" href="Chinese.html">Chinese</a></li>
+                            <li><a class="dropdown-item" href="Italian.html">Italian</a></li>
+                            <li><a class="dropdown-item" href="Lebanese.html">Lebanese</a></li>
+                            <li><a class="dropdown-item" href="French.html">French</a></li>
+                            <li><a class="dropdown-item" href="Korean.html">Korean</a></li>
+                            <li><a class="dropdown-item" href="Spanish.html">Spanish</a></li>
+                            <li><a class="dropdown-item" href="Mexican.html">Mexican</a></li>
+                            <li><a class="dropdown-item" href="Mediterranean.html">Mediterranean</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="my-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+  
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signupModalLabel">Create Account</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputfirst-name" class="form-label">First name</label>
+                        <input type="first-name" class="form-control" id="exampleInputfirst-name" aria-describedby="first-name">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputLast-name" class="form-label">Last name</label>
+                        <input type="first-name" class="form-control" id="exampleInputlast-name" aria-describedby="last-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <p><b>Everydetail you share with us is encripted</b></p>
+                  </form>            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Signup</button>
+            </div>
+          </div>
+        </div>
+    </div>
+          <div class="col p-4 d-flex flex-column position-static">
+              <h1><strong class="d-inline-block mb-2 text-primary-emphasis">CURRY</strong></h1>
+              <div class="col-auto">
+                <img class="img-fluid bd-placeholder-img " src="https://source.unsplash.com/1300x500/?curry"
+                    alt="samosa image">
+              </div>
+              <div class="list-group">               
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">1 - Details about the dish</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">2 - Approx time required- 45 min</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3 - Ingredients</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">4 - Recipie(steps by steps)</a>               
+              </div>
+          
+              <div class="card border-primary mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em> Details about the dish </em></strong></div>
+                <div class="card-body text-primary">
+                  <!-- <h5 class="card-title">Primary card title</h5> -->
+                  <p class="card-text">Chicken curry from the Indian subcontinent typically features chicken stewed in a tomato-based sauce 
+                    seasoned with aromatic spices. This recipe, like many others, calls for curry powder (a spice blend made with coriander, turmeric,
+                    cumin, and chili powder).
+                    Curry is one of India’s most popular and well-known dishes.
+                    Tomato-based curries are known as the ultimate comfort food in India, and countries 
+                    all over the world have adopted this opinion too. Curry spices are added to sizzling 
+                    aromatics with other ingredients then added in, simmering together until the flavors 
+                    merge in perfect harmony. Particularly delicious when topped over rice, there is a wide 
+                    range of curry options to choose from, such as lamb, chicken, fish, or shrimp.</p>
+                </div>
+              </div>
+
+              <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong>Ingredients<em></em></strong></div>
+                <div class="card-body text-dark">
+                  <footer class="blockquote-footer">You can check your ingredients by clicking the buttons</footer>
+                  <p class="card-text">
+                    <strong>Samosa Dough</strong>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">3 tablespoons olive oil</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 small onion, chopped</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 cloves garlic, minced</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">3 tablespoons curry powder</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon ground cinnamon</label>
+                    </div>
+                    
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon paprika</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 bay leaf</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">½ teaspoon grated fresh ginger root</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">½ teaspoon white sugar</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">salt to taste</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 skinless, boneless chicken breast halves - cut into bite-size pieces
+                    </label>
+                    </div><div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 tablespoon tomato paste</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 cup plain yogurt</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">¾ cup coconut milk</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">½ lemon, juiced</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">½ teaspoon cayenne pepper</label>
+                    </div>
+                    
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="card border-success mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em>Recipie (steps by steps)</em></strong></div>
+                <div class="card-body text-success">
+                  <footer class="blockquote-footer">You can check your steps by clicking the buttons</footer>
+                  <p class="card-text">
+                    <strong>Make Samosa Dough</strong>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1- Heat olive oil in a skillet over medium heat. Sauté onion until lightly browned.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2- Stir in garlic, curry powder, cinnamon, paprika, bay leaf, ginger, sugar, and salt. Continue stirring for 2 minutes.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3- Add chicken pieces, tomato paste, yogurt, and coconut milk. Bring to a boil, reduce heat, and simmer for 20 to 25 minutes.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        4- Remove bay leaf, and stir in lemon juice and cayenne pepper. Simmer 5 more minutes.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        5- Serve hot and enjoy!
+                      </label>
+                    </div>
+                    
+                  </p>
+                </div>
+              </div>
+              
+          </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

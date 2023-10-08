@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food-Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid" style="background-color: orangered;">
+            <a class="navbar-brand" href="bootstrap.html">Food-Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="bootstrap.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Samosa
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Indian.html">Indian</a></li>
+                            <li><a class="dropdown-item" href="Chinese.html">Chinese</a></li>
+                            <li><a class="dropdown-item" href="Italian.html">Italian</a></li>
+                            <li><a class="dropdown-item" href="Lebanese.html">Lebanese</a></li>
+                            <li><a class="dropdown-item" href="French.html">French</a></li>
+                            <li><a class="dropdown-item" href="Korean.html">Korean</a></li>
+                            <li><a class="dropdown-item" href="Spanish.html">Spanish</a></li>
+                            <li><a class="dropdown-item" href="Mexican.html">Mexican</a></li>
+                            <li><a class="dropdown-item" href="Mediterranean.html">Mediterranean</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="my-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+  
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signupModalLabel">Create Account</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputfirst-name" class="form-label">First name</label>
+                        <input type="first-name" class="form-control" id="exampleInputfirst-name" aria-describedby="first-name">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputLast-name" class="form-label">Last name</label>
+                        <input type="first-name" class="form-control" id="exampleInputlast-name" aria-describedby="last-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <p><b>Everydetail you share with us is encripted</b></p>
+                  </form>            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Signup</button>
+            </div>
+          </div>
+        </div>
+    </div>
+          <div class="col p-4 d-flex flex-column position-static">
+              <h1><strong class="d-inline-block mb-2 text-primary-emphasis">SAMOSA</strong></h1>
+              <div class="col-auto">
+                <img class="img-fluid bd-placeholder-img " src="https://source.unsplash.com/1300x500/?samosa"
+                    alt="samosa image">
+              </div>
+              <div class="list-group">               
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">1 - Details about the dish</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">2 - Approx time required- 1hr</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3 - Ingredients</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">4 - Recipie(steps by steps)</a>               
+              </div>
+          
+              <div class="card border-primary mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em> Details about the dish </em></strong></div>
+                <div class="card-body text-primary">
+                  <!-- <h5 class="card-title">Primary card title</h5> -->
+                  <p class="card-text">The triangular shaped flaky pastry filled with spicy potato, chicken or lamb filling is a popular snack not only in India but in several countries of the world.
+
+                    Because samosa is so so common in India (you literally get samosa and chai at every other street corner), I always considered it to be a quintessential Indian delicacy.                    
+                    But only later I read that it has its origin in Middle East and it was introduced to India during the Delhi Sultanate rule.                    
+                    It was later adapted as a vegetarian snack with spicy potato filling in India (which is  what is most popular in northern India).
+                    
+                    Anyway whatever the origin was, I can confidently say that samosa, especially Aloo Samosa is the most popular snack back home.
+                    
+                    It’s there in every party, office meeting, chai meet-ups, you name it and samosa will be there!                    
+                    I was very particular about the type of samosa that I liked and I liked it only from one shop in my hometown.
+                    
+                    Even now when I go home, I make sure to indulge in those samosas from my favorite shop.
+                    
+                    For me a good samosa should be crispy and most importantly it should not be oily at all.
+                    
+                    Here in the US I haven’t had much luck finding good samosas so now I make them at home.                    
+                    And dare I say, they turn out as good as the one from my favorite shop in India! 🙂                    
+                    Making samosa is a multi-step process so I am not going to say it’s super quick and easy.                    
+                    But the joy of biting into that homemade flaky crispy crust filled with spicy potatoes makes it all worth it.
+                    
+                    This is one of those treats that you should make for special occasions or over a weekend when you want to have some fun in the kitchen.</p>
+                </div>
+              </div>
+
+              <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong>Ingredients<em></em></strong></div>
+                <div class="card-body text-dark">
+                  <footer class="blockquote-footer">You can check your ingredients by clicking the buttons</footer>
+                  <p class="card-text">
+                    <strong>Samosa Dough</strong>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 cups all purpose flour (maida) 260 grams</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon ajwain carom seeds</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1/4 teaspoon salt</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">4 tablespoons + 1 teaspoon oil 60 ml + 5 ml</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">water to knead the dough, around 6 tablespoons</label>
+                    </div>
+                    <br>
+                    <strong>Samosa Filling</strong>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">3-4 medium potatoes 500-550 grams</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 tablespoons oil</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon cumin seeds</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon fennel seeds</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 teaspoons crushed coriander seeds</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon finely chopped ginger
+                    </label>
+                    </div><div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 green chili chopped</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1/4 teaspoon hing asafoetida</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1/2 cup +2 tablespoons green peas I used frozen green peas which I soaked in warm water for 10-15 minutes before using</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon coriander powder</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">1/2 teaspoon garam masala</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">1/2 teaspoon amchur dried mango powder</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">1/4 teaspoon red chili powder or add more to taste</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">3/4 teaspoon salt or to taste</label>
+                    </div>
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="card border-success mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em>Recipie (steps by steps)</em></strong></div>
+                <div class="card-body text-success">
+                  <footer class="blockquote-footer">You can check your steps by clicking the buttons</footer>
+                  <p class="card-text">
+                    <strong>Make Samosa Dough</strong>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1- Start by making the samosa dough. To a large bowl, add flour, ajwain (carom seeds), salt and mix well.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2- Add the oil and then start mixing with your fingers. Rub the flour with the oil until the oil is well incorporated 
+                        in all of the flour. Do this for 3 to 4 minutes, you don't want to rush this step. Once incorporated,  the mixture resembles crumbs.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3- Press some flour between your palm- it should form a shape (& not crumble) – means oil is enough and well incorporated.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        4- Now, start adding water, little by little and mix to form a stiff dough. Don't overwork the dough and don't knead 
+                        a soft dough. It should just come together and form a stiff dough. I used around 6 tablespoons of water here.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        5- Cover the dough with a moist cloth and let it rest for 40 minutes. I usually soak a paper towel in water and then 
+                        squeeze out all the water and then cover my dough with that. While the dough is resting, start working on the filling.
+                      </label>
+                    </div>
+                    <br>
+                    <strong>Make the potato filling</strong>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1- Boil potatoes until done. 8 to 9 whistles on high heat with natural pressure release if using stove-top pressure cooker 
+                        or if using Instant Pot, high pressure 12 minutes with natural pressure release on a trivet with 1 cup water in the bottom of the pot.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2- Peel the skin and them mash the potatoes. Set aside. Heat 2 tablespoons of oil in a pan on medium heat. Once the oil is hot, add 
+                        the cumin seeds, fennel seeds and crushed coriander seeds.
+                        Let the seeds sizzle for few seconds and then add the chopped ginger, green chili and hing. Cook for 1 minute.
+
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3- Add the boiled & mashed potatoes and green peas to the pan. Mix everything together. I use my potato masher to combine the spices and 
+                        seasonings well with the potatoes and peas.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        4- Add the coriander powder, garam masala, amchur, red chili powder and salt. Mix to combine. Once it's all well incorporated, remove pan from
+                         heat and let the filling cool down a bit.
+                      </label>
+                    </div>
+                    <br>
+                    <strong>Shape & fry the Samosa</strong>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1- Once the dough has rested, give it a quick knead. Then divide the dough into 7 equal parts of around 58-60 grams each.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2- Roll one dough ball into a circle-oval kind of shape, around 6-7 inches in diameter and then cut it into two parts.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            3- Take one part and apply water on the straight edge/side. I usually mix some flour with water so that it forms a nice glue.
+                            Now bring the two ends of the straight edge together and pinch them to form a cone. See step-by-step pictures above for a 
+                            better idea. Pinch the pointed ends to make it a perfect cone shape.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            4- Fill the samosa with the potato filling, around 1 to 2 tablespoons. Don't overfill the samosa.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            5- Now again apply water all around the circumference of the cone as you have to seal it. Pinch the opposite 
+                            side (side opposite to where you pinched to form the cone) to form a plate (see step-by-step pictures above). 
+                            Then pinch the edges and seal the samosa.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            6- Your samosa is now ready. Repeat the same process with remaining dough. Always remember to keep the filled 
+                            samosa covered with a moist cloth while roll and fill the others. You will get 14 samosas.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            7- Now heat oil in a kadai on low heat. To check if oil is ready, drop a small piece of dough into the oil.
+                             It should take few seconds to come up to the surface. That means the oil is ready.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            8- Fry on low heat. After around 10-12 minutes, the samosa will become firm and light brown in color. At this point,
+                             increase the heat to medium and fry until it gets nicely browned.
+                            Don't overcrowd the kadai/wok, fry 4-5 samosas at a time. And each batch will take around 20 minutes since we fry on low heat so be patient.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                        <label class="form-check-label" for="flexCheckDefault">
+                            9- Once you finish frying  one batch, lower the heat again to low and wait until the temperature of the oil drops and then add the second batch.
+                            Enjoy hot samosas with cilantro chutney or sweet tamarind chutney!
+                        </label>
+                      </div>
+
+                  </p>
+                </div>
+              </div>
+              
+          </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

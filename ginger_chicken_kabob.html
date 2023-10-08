@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food-Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid" style="background-color: orangered;">
+            <a class="navbar-brand" href="index.html">Food-Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            GINGER CHICKEN KABOB
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Indian.html">Indian</a></li>
+                            <li><a class="dropdown-item" href="Chinese.html">Chinese</a></li>
+                            <li><a class="dropdown-item" href="Italian.html">Italian</a></li>
+                            <li><a class="dropdown-item" href="Lebanese.html">Lebanese</a></li>
+                            <li><a class="dropdown-item" href="French.html">French</a></li>
+                            <li><a class="dropdown-item" href="Korean.html">Korean</a></li>
+                            <li><a class="dropdown-item" href="Spanish.html">Spanish</a></li>
+                            <li><a class="dropdown-item" href="Mexican.html">Mexican</a></li>
+                            <li><a class="dropdown-item" href="Mediterranean.html">Mediterranean</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="my-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+  
+  <!--login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signupModalLabel">Create Account</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputfirst-name" class="form-label">First name</label>
+                        <input type="first-name" class="form-control" id="exampleInputfirst-name" aria-describedby="first-name">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleInputLast-name" class="form-label">Last name</label>
+                        <input type="first-name" class="form-control" id="exampleInputlast-name" aria-describedby="last-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <p><b>Everydetail you share with us is encripted</b></p>
+                  </form>            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Signup</button>
+            </div>
+          </div>
+        </div>
+    </div>
+          <div class="col p-4 d-flex flex-column position-static">
+              <h1><strong class="d-inline-block mb-2 text-primary-emphasis"> GINGER CHICKEN KABOB</strong></h1>
+              <div class="col-auto">
+                <img class="img-fluid bd-placeholder-img " src="https://source.unsplash.com/1300x500/?dal soup"
+                    alt="dal soup image">
+              </div>
+              <div class="list-group">               
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">1 - Details about the dish</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">2 - Approx time required-1 hr</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3 - Ingredients</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">4 - Recipie(steps by steps)</a>               
+              </div>
+          
+              <div class="card border-primary mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em> Details about the dish </em></strong></div>
+                <div class="card-body text-primary">
+                  <!-- <h5 class="card-title">Primary card title</h5> -->
+                  <p class="card-text">Ginger Chicken Kebab is here to win your hearts with its all new and exciting flavours. 
+                    Added with green chili paste, ginger paste and white pepper powder, this North Indian recipe will surely 
+                    be a treat for your taste buds. This delicious snack recipe can be highly preferred on several occasions such 
+                    as kitty parties, buffet parties or anniversaries. It is specially garnished with chopped ginger pieces and 
+                    tastes best when had along with green chutney or tomato ketchup. Serve this to your near and dear ones at the 
+                    next get-together you host and bask in the compliments that you would be showered with! So, put on your apron 
+                    and try your hand at this lip smacking recipe today!</p>
+                </div>
+              </div>
+
+              <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong>Ingredients<em></em></strong></div>
+                <div class="card-body text-dark">
+                  <footer class="blockquote-footer">You can check your ingredients by clicking the buttons</footer>
+                  <p class="card-text">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">500 gm chicken boneless</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">2 tablespoon ginger paste</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">salt as required</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1/2 tablespoon crushed to paste green chillies</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon white pepper powder</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1/2 cup hung curd</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">1 teaspoon chopped ginger</label>
+                    </div>
+                    
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="card border-success mb-3" style="max-width: 100%;">
+                <div class="card-header"><strong><em>Recipie (steps by steps)</em></strong></div>
+                <div class="card-body text-success">
+                  <footer class="blockquote-footer">You can check your steps by clicking the buttons</footer>
+                  <p class="card-text">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        1- To begin with this delicious recipe, wash the chicken pieces and let it dry for some time. 
+                        Then, carefully, slice the chicken into cubes.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        2- Then, take a bowl and mix chicken breasts, green chili paste, white pepper powder, salt, ginger 
+                        paste and malt vinegar into it. Using your fingers, rub the chicken pieces in the mixture from both the sides.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        3- Take another bowl and whisk the hung yogurt in it. Add the chicken pieces from the first bowl to the the second 
+                        bowl i.e. bowl with yogurt.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        4- Let the chicken pieces marinade for about 30 minutes or so. Keep it aside for a while.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        5- Once marinated, take out the chicken pieces, place them carefully on the skewers and roast them over the grill for about 10 minutes or so.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                      <label class="form-check-label" for="flexCheckDefault">
+                        6- Once the excess liquid is drained, garnish it with finely chopped ginger and serve the Ginger Chicken Kebab hot!
+                      </label>
+                    </div>
+                    
+                    
+                  </p>
+                </div>
+              </div>
+              
+          </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
